@@ -77,6 +77,11 @@ Or just get the Typeface directly
 
 
 ---
+### Importing 
+
+	compile 'co.52inc:fontloader:+'
+
+---
 ### Author
 
 * **Drew Heavner** (r0adkll) @ [52inc](http://www.52inc.co)
