@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.ftapps.fontloader;
+package com.ftinc.fontloader;
 
 import android.app.Activity;
 import android.content.Context;
@@ -54,7 +54,7 @@ import java.util.List;
  *
  * </pre>
  *
- * For a list of all 'types' that can be used see {@link com.ftapps.fontloader.Types}
+ * For a list of all 'types' that can be used see {@link com.ftinc.fontloader.Types}
  *
  * Created by drew@52inc.co on 6/26/14.
  */
@@ -114,7 +114,7 @@ public class FontLoader {
     /**
      * Apply a typeface to a textview
      *
-     * @see com.ftapps.fontloader.Types
+     * @see com.ftinc.fontloader.Types
      *
      * @param textView      the text view you wish to apply to
      * @param type          the typeface to apply

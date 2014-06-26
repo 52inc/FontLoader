@@ -1,11 +1,12 @@
 apply plugin: 'android-library'
+apply plugin: 'maven'
 
 android {
     compileSdkVersion 19
     buildToolsVersion '19.1.0'
 
     defaultConfig {
-        applicationId 'com.ftapps.fontloader'
+        applicationId 'com.ftinc.fontloader'
         minSdkVersion 15
         targetSdkVersion 19
         versionCode 1
@@ -31,3 +32,5 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
+
+apply from: '../gradle-mvn-push.gradle'

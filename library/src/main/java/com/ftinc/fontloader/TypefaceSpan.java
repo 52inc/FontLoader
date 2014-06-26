@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.ftapps.fontloader;
+package com.ftinc.fontloader;
 
 import android.content.Context;
 import android.graphics.Paint;

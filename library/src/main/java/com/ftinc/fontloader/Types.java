@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.ftapps.fontloader;
+package com.ftinc.fontloader;
 
 /**
- * These are all the available typeface types that the {@link com.ftapps.fontloader.FontLoader}
+ * These are all the available typeface types that the {@link com.ftinc.fontloader.FontLoader}
  * will take to load the Roboto typefaces.
  *
  * Created by drew.heavner on 6/26/14.
