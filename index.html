@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Fontloader by 52inc</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Fontloader</h1>
+        <h2>An easy to use Roboto font loader for Android. Easily apply typefaces to TextView&#39;s or it&#39;s subclasses, or just easily load a typeface into memory.</h2>
+        <a href="https://github.com/52inc/FontLoader" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h2>
+<a name="fontloader" class="anchor" href="#fontloader"><span class="octicon octicon-link"></span></a>FontLoader</h2>
+
+<p>An easy to use Roboto font loader for Android. Easily apply typefaces to TextView or its subclasses, or just easily load a typeface into memory.</p>
+
+<p>There is also a <code>Span</code> for creating spannable strings with this typeface loader system called <code>TypefaceSpan</code></p>
+
+<hr><h3>
+<a name="types" class="anchor" href="#types"><span class="octicon octicon-link"></span></a>Types</h3>
+
+<p><code>Types</code> are string constants used to identify which Roboto typeface you are trying to load and are formated to be as intuitive and easy as possible. Here are all the <code>Types</code> available to you in the <code>Types.java</code> class:</p>
+
+<pre><code>public class Types {
+
+    /**
+     * Roboto Types
+     */
+
+    public static final String ROBOTO_BLACK = "roboto-black";
+    public static final String ROBOTO_BLACK_ITALIC = "roboto-black-italic";
+    public static final String ROBOTO_BOLD = "roboto-bold";
+    public static final String ROBOTO_BOLD_ITALIC = "roboto-bold-italic";
+    public static final String ROBOTO_ITALIC = "roboto-italic";
+    public static final String ROBOTO_LIGHT = "roboto-light";
+    public static final String ROBOTO_LIGHT_ITALIC = "roboto-light-italic";
+    public static final String ROBOTO_MEDIUM = "roboto-medium";
+    public static final String ROBOTO_MEDIUM_ITALIC = "roboto-medium-italic";
+    public static final String ROBOTO_REGULAR = "roboto-regular";
+    public static final String ROBOTO_THIN = "roboto-thin";
+    public static final String ROBOTO_THIN_ITALIC = "roboto-thin-italic";
+
+    /**
+     * Roboto Condensed Types
+     */
+
+    public static final String CONDENSED_BOLD = "condensed-bold";
+    public static final String CONDENSED_BOLD_ITALIC = "condensed-bold-italic";
+    public static final String CONDENSED_ITALIC = "condensed-italic";
+    public static final String CONDENSED_LIGHT = "condensed-light";
+    public static final String CONDENSED_LIGHT_ITALIC = "condensed-light-italic";
+    public static final String CONDENSED_REGULAR = "condensed-regular";
+
+}
+</code></pre>
+
+<hr><h3>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h3>
+
+<p>Here are some example usages of the library.</p>
+
+<pre><code>TextView title = (TextView) findViewById(R.id.title);
+
+FontLoader.applyTypeface(title, "roboto-bold");
+
+// Or...
+
+FontLoader.applyTypeface(title, Types.ROBOTO_BOLD);
+</code></pre>
+
+<p>Or by applying to a view in layout without having to 'find' it</p>
+
+<pre><code>View parent = LayoutInflater.from(this).inflate(R.layout.something);
+
+FontLoader.applyTypeface(parent, R.id.subtitle, "roboto-light");
+
+// Or
+
+FontLoader.applyTypeface(parent, R.id.subtitle, Types.ROBOTO_LIGHT);
+
+// Or
+
+FontLoader.applyTypeface(this, R.id.subtitle, Types.ROBOTO_LIGHT);
+</code></pre>
+
+<p>Or just get the Typeface directly</p>
+
+<pre><code>Typeface robotoRegular = FontLoader.getTypeface(this, Types.ROBOTO_REGULAR);
+</code></pre>
+
+<hr><h3>
+<a name="importing" class="anchor" href="#importing"><span class="octicon octicon-link"></span></a>Importing</h3>
+
+<pre><code>compile 'co.52inc:fontloader:+'
+</code></pre>
+
+<hr><h3>
+<a name="author" class="anchor" href="#author"><span class="octicon octicon-link"></span></a>Author</h3>
+
+<ul>
+<li>
+<strong>Drew Heavner</strong> (r0adkll) @ <a href="http://www.52inc.co">52inc</a>
+</li>
+</ul><hr><h3>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h3>
+
+<pre><code>Copyright (c) 2014 52inc
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+</code></pre>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/52inc/FontLoader/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/52inc/FontLoader/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/52inc/FontLoader"></a> is maintained by <a href="https://github.com/52inc">52inc</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
