@@ -74,6 +74,12 @@ Or just get the Typeface directly
 
 	Typeface robotoRegular = FontLoader.getTypeface(this, Types.ROBOTO_REGULAR);
 	
+---
+### TODO
+
+*	Add support to apply a typeface to an entire layout
+*	Add support to easily apply typeface to actionbar
+*	Add more static convienence functions
 
 
 ---
